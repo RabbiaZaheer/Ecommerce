@@ -1,0 +1,412 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      background-color: #f5f6fa;
+    }
+    .sidebar {
+      width: 220px;
+      background-color:rgb(166, 99, 230);
+      color: rgb(226, 219, 219);
+      padding-top: 8px;
+      height: 100vh;
+      position: fixed;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .sidebar input{
+        width: 80%;
+        height: 2%;
+        padding: 10px;
+        margin: 10px auto;
+        display: block;
+        border-radius: 10px;
+        border: none;
+        background-color: #f5f6fa4b;
+        color: #333;
+        font-size: 16px;
+    }
+    .sidebar input:focus{
+        outline: none;
+        border: 0px solid #4a69bd;
+        background-color: #f5f6fa4b;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'forte';
+      font-size: 30px;
+    }
+.sidebar p {
+      text-align: left;
+      margin-bottom: 10px;
+      font-family: 'claibribody';
+      color: rgb(226, 219, 219);
+      margin-left: 10px;
+      font-weight: bold;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+ .sidebar i {
+      padding: 0px 0px 0px 0px;
+    }
+    .sidebar ul li.active,
+    .sidebar ul li:hover {
+      background-color: #1c2541;
+        color: white;
+        border-radius: 25px;
+    }
+     .sidebar a {
+      text-decoration: none;
+ color: rgb(204, 199, 199);
+     }
+      .sidebar a:hover {
+      color: white;
+      }
+   .main {
+      margin-left: 220px;
+      flex-grow: 1;
+      padding: 10px;
+    }
+    .top-bar {
+      background-color: white;
+      padding: 10px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      gap: 10px;
+    }
+    .top-bar input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      font-size: 16px;
+      height: 8px;
+    }
+    .top-bar li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 0px 0px 0px;
+      font-size: 16px;
+    }
+     .top-bar li:hover {
+      color: #4a69bd;   
+    cursor: pointer;
+    }
+    .btn {
+      background-color: rgb(166, 99, 230);
+      color: white;
+       width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: 'Calibri';
+      justify-content: center;
+      text-align: center;
+    }
+    .btn a {    
+      color: white;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: rgb(118, 112, 201);
+      cursor: pointer;
+    }
+    .top-bar button {
+      background-color: rgb(166, 99, 230);
+      color: white;
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: 'Calibri';
+      margin-right: 10px;
+      gap: 0px;
+    }
+    .top-bar button:hover {
+      background-color: rgb(118, 112, 201);
+      cursor: pointer;
+    }
+    .content {
+      padding: 0px;
+      background-color:none;
+     height: 7vh;
+
+    }
+     .content li{
+list-style: none;
+      display: inline-block;
+      margin: 16px 10px 0px 60px;
+      font-size: 16px;
+      color: rgb(7, 7, 7);
+font-family: 'Calibri';
+
+     }
+     .content li:hover{ 
+        color: rgb(118, 112, 201);
+        cursor: pointer;
+     }
+     .box{
+width: 100%;
+      height: 60px;
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+     }
+    .box input {
+      width: 300px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #ddd;
+      font-size: 16px;
+      height: 8px;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+    .box button {
+      background-color:white;
+      color:black;
+       width: 100px;
+      height: 30px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: 'Calibri';
+      margin-left: 10px;
+      margin-top: 15px;
+    }
+    .box i {
+      font-size: 10px;
+      color: #040811;
+      
+    }
+     .box button:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    color: blue;}
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px;
+      background: #f6f8fb;
+    }
+
+    .toolbar input[type="checkbox"] {
+      margin-right: 5px;
+      accent-color: #4c6ef5;
+      transform: scale(1.2);
+    }
+
+    .toolbar .label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #2c3e50;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      border: none;
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+      gap: 6px;
+      font-weight: 500;
+    }
+
+    .btn i {
+      font-size: 16px;
+    }
+
+    .btn-print {
+      background-color: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+    }
+
+    .btn-update {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+        padding: 6px;
+        width: 150px; 
+    }
+
+    .btn-download {
+      background-color: #f3e8ff;
+      color: #6f42c1;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
+    .btn-delete {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
+    .btn-more {
+      background-color: #dee2e6;
+      color: #343a40;
+      padding: 6px;
+      border-radius: 8px;
+    }
+
+    .btn-icon {
+      padding: 6px 8px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      height: 36px;
+      width: 36px;
+    }
+    .orders-container {
+      max-height: 600px;
+      overflow-y: auto;
+      padding-right: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: #ccc #f5f7fa;
+    }
+
+    .orders-container::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    .orders-container::-webkit-scrollbar-track {
+      background: #f5f7fa;
+    }
+
+    .orders-container::-webkit-scrollbar-thumb {
+      background-color: #bbb;
+      border-radius: 10px;
+    }
+
+    .order-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .order-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .order-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .order-info input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+
+    .order-id {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .badge {
+      padding: 3px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: white;
+    }
+
+    .badge-paid { background-color: #28a745; }
+    .badge-pending { background-color: #6c757d; }
+    .badge-warning { background-color: #ffc107; color: #212529; }
+
+    .order-subinfo {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .order-status-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      color: white;
+      background: #999;
+    }
+
+    .tag-green { background: #28a745; }
+    .tag-red { background: #dc3545; }
+    .tag-yellow { background: #ffc107; color: #212529; }
+    .tag-gray { background: #6c757d; }
+    .tag-blue { background: #007bff; }
+
+    .product-info {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .product-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .product-details p {
+      margin: 2px 0;
+    }
+
+    .order-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 6px 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 13px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .btn-print { background: #fff3cd; color: #856404; }
+    .btn-update { background: #d4edda; color: #155724; }
+    .btn-view { background: #4c6ef5; color: white; }
